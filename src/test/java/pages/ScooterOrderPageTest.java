@@ -80,7 +80,8 @@ public class ScooterOrderPageTest {
         createOrder.regData(name,lname,adres,station,phone);
         createOrder.regScooter(day,period,color,comment);
         createOrder.yesClick();
-        assertEquals(createOrder.orderCreated(),"Заказ оформлен");
+        String expected = "Заказ оформлен";
+        assertEquals(expected,createOrder.orderCreated());
         createOrder.cancelOrder();
     }
     @Test
@@ -94,7 +95,8 @@ public class ScooterOrderPageTest {
         createOrder.regData(name,lname,adres,station,phone);
         createOrder.regScooter(day,period,color,comment);
         createOrder.yesClick();
-        assertEquals(createOrder.orderCreated(),"Заказ оформлен");
+        String expected = "Заказ оформлен";
+        assertEquals(expected,createOrder.orderCreated());
         createOrder.cancelOrder();
     }
     @Test
@@ -108,7 +110,8 @@ public class ScooterOrderPageTest {
         createOrder.regData(name,lname,adres,station,phone);
         createOrder.regScooter(day,period,color,comment);
         createOrder.yesClick();
-        assertEquals(createOrder.orderCreated(),"Заказ оформлен");
+        String expected = "Заказ оформлен";
+        assertEquals(expected,createOrder.orderCreated());
         createOrder.cancelOrder();
     }
     @Test
@@ -122,7 +125,8 @@ public class ScooterOrderPageTest {
         createOrder.regData(name,lname,adres,station,phone);
         createOrder.regScooter(day,period,color,comment);
         createOrder.yesClick();
-        assertEquals(createOrder.orderCreated(),"Заказ оформлен");
+        String expected = "Заказ оформлен";
+        assertEquals(expected,createOrder.orderCreated());
         createOrder.cancelOrder();
     }
 

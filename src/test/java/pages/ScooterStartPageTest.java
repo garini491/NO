@@ -24,7 +24,7 @@ public class ScooterStartPageTest {
     }
 
     @Test
-    public void checkAnswersChrome() {
+    public void checkAnswersChromeBrowser() {
         driver = new ChromeDriver();
         ScooterStartPage startPage = new ScooterStartPage(driver);
         startPage.openStartPage();
@@ -33,7 +33,7 @@ public class ScooterStartPageTest {
         for (int i = 0; i < 8; i++) {
             driver.findElement(By.xpath(".//div[@id = 'accordion__heading-" + i + "']")).click();
             WebElement element = driver.findElement(By.xpath(".//div[@id = 'accordion__panel-" + i +"']/p"));
-                assertEquals(startPage.getTexts(i), element.getText());
+                assertEquals(startPage.getExpectedTexts(i), element.getText());
             }
     }
 
@@ -47,7 +47,7 @@ public class ScooterStartPageTest {
         for (int i = 0; i < 8; i++) {
             driver.findElement(By.xpath(".//div[@id = 'accordion__heading-" + i + "']")).click();
             WebElement element = driver.findElement(By.xpath(".//div[@id = 'accordion__panel-" + i +"']/p"));
-            assertEquals(startPage.getTexts(i), element.getText());
+            assertEquals(startPage.getExpectedTexts(i), element.getText());
         }
     }
 

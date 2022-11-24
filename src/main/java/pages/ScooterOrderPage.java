@@ -151,7 +151,7 @@ public class ScooterOrderPage {
 
     // Метод клика на кнопку да
     public void yesClick() {
-        new WebDriverWait(driver, 3)
+        new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.visibilityOf(driver.findElement(orderModal)));
         driver.findElement(yesButton).click();
     }

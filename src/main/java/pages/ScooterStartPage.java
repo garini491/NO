@@ -28,7 +28,7 @@ public class ScooterStartPage {
     }
 
     // Массив текстов
-    private String[] texts = {
+    private String[] expectedTexts = {
             "Сутки — 400 рублей. Оплата курьеру — наличными или картой.",
             "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.",
             "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.",
@@ -54,8 +54,8 @@ public class ScooterStartPage {
     public void coockyButtonClick() {
         driver.findElement(coockyButton).click();
     }
-    public String getTexts(int i) {
-        return texts[i];
+    public String getExpectedTexts(int i) {
+        return expectedTexts[i];
     }
 
     // Метод клика на верхнюю кнопку "Заказать"
