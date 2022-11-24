@@ -17,8 +17,8 @@ import static org.junit.Assert.assertEquals;
 public class ScooterOrderPageTest {
     private WebDriver driver;
     private final String name;
-    private final String lname;
     private final String adres;
+    private final String lname;
     private final String station;
     private final String phone;
     private final String day;

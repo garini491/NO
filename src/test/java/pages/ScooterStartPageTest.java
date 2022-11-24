@@ -24,7 +24,7 @@ public class ScooterStartPageTest {
     }
 
     @Test
-    public void checkAnswersChromeBrowser() {
+    public void checkAnswersChrome() {
         driver = new ChromeDriver();
         ScooterStartPage startPage = new ScooterStartPage(driver);
         startPage.openStartPage();

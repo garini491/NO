@@ -88,14 +88,16 @@ public class ScooterOrderPage {
                 .until(ExpectedConditions.elementToBeClickable(By.xpath(".//div[text() ='" + stationName + "']")));
         driver.findElement(By.xpath(".//div[text() ='" + stationName + "']")).click();
     }
-    // Метод заполнения поля Телефон
-    public void setPhone(String telephone) {
-        driver.findElement(phone).sendKeys(telephone);
-    }
     // Метод клика на кнопку Далее
     public void nextClick() {
         driver.findElement(nextButton).click();
     }
+
+    // Метод заполнения поля Телефон
+    public void setPhone(String telephone) {
+        driver.findElement(phone).sendKeys(telephone);
+    }
+
 
     // Шаг заполнения первой страницы
     public void regData(String name, String lname, String adress, String stationName, String telephone) {

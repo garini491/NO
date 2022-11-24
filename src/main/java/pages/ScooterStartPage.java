@@ -49,14 +49,14 @@ public class ScooterStartPage {
         WebElement element = driver.findElement(homeFAQ);
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
     }
-
+    public String getExpectedTexts(int i) {
+        return expectedTexts[i];
+    }
     // Метод нажатия на кнопку куки
     public void coockyButtonClick() {
         driver.findElement(coockyButton).click();
     }
-    public String getExpectedTexts(int i) {
-        return expectedTexts[i];
-    }
+
 
     // Метод клика на верхнюю кнопку "Заказать"
     public void highClick(){
